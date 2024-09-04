@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signup from './components/Signup';
+import Login from './components/Login';
+import ChildDashboard from './components/ChildDashboard';
+import AdultDashboard from './components/AdultDashboard';
+import AdminPanel from './components/AdminPanel';
+import HomePage from './components/HomePage';
+import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 
-function App() {
+
+import { ToastContainer } from 'react-toastify';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/child-dashboard" element={<ChildDashboard />} />
+        <Route path="/adult-dashboard" element={<AdultDashboard />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
+        <Route path="/reset-password" element={<ResetPassword />} /> {/* Add the ResetPassword route */}
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      <ToastContainer />
+    </Router>
   );
-}
+};
 
 export default App;

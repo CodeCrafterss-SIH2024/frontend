@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*  this is a code of loader */
+/* Add this to your global CSS file or include it in the component’s CSS */
+.loader {
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
