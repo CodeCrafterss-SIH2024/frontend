@@ -96,6 +96,7 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import { toast } from 'react-toastify';
+import  image1 from '../img/loginimg.jpg'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -124,9 +125,11 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-cover " 
+    style={{ backgroundImage: `url(${image1})` }}
+      >
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-bold text-center text-teal-900 mb-6">Login</h2>
+        <h2 className="text-4xl font-extrabold text-center text-[#581e8a] mb-6">Login</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="email">
@@ -138,7 +141,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
           </div>
@@ -152,22 +155,22 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-400"
+            className="w-full bg-[#7b2cbf] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#5c2d85] focus:outline-none focus:ring-2 focus:ring-teal-400"
           >
             Login
           </button>
           <div className="text-center mt-4">
-            <Link to="/reset-password" className="text-teal-600 hover:text-teal-800">
+            <Link to="/reset-password" className="text-[#7b2cbf] hover:text-[#5c2d85">
               Forgot your password?
             </Link>
             <p className="text-sm text-gray-600 mt-2">
-              Don't have an account? <Link to="/signup" className="text-teal-600 hover:underline">Sign Up</Link>
+              Don't have an account? <Link to="/signup" className="text-[#7b2cbf] hover:underline">Sign Up</Link>
             </p>
           </div>
         </form>

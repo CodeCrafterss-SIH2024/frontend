@@ -663,7 +663,7 @@ const Signup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-bold text-center text-teal-800 mb-6">Signup</h2>
+        <h2 className="text-3xl font-extrabold text-center text-[#7b2cbf] mb-6">Signup</h2>
         <form onSubmit={handleSignup}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-semibold mb-2" htmlFor="username">
@@ -675,7 +675,7 @@ const Signup = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Enter your username"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
           </div>
@@ -689,7 +689,7 @@ const Signup = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
           </div>
@@ -703,7 +703,7 @@ const Signup = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
             <span
@@ -723,7 +723,7 @@ const Signup = () => {
               value={age}
               onChange={(e) => setAge(e.target.value)}
               placeholder="Enter your age"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
               required
             />
           </div>
@@ -738,13 +738,13 @@ const Signup = () => {
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
                 placeholder="Enter OTP"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-teal-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf]"
                 required
               />
               <button
                 type="button"
                 onClick={handleVerifyOtp}
-                className="w-full bg-teal-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400 mt-4"
+                className="w-full bg-[#7b2cbf] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#4a1e70] focus:outline-none focus:ring-2 focus:ring-teal-400 mt-4"
               >
                 Verify OTP
               </button>
@@ -753,14 +753,14 @@ const Signup = () => {
             <button
               type="button"
               onClick={handleSendOtp}
-              className="w-full bg-teal-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400"
+              className="w-full h-[50px] bg-[#7b2cbf] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#501f7b] focus:outline-none focus:ring-2 focus:ring-teal-400"
             >
               {loading ? <Loader /> : 'Verify Email'}
             </button>
           )}
           <button
             type="submit"
-            className="w-full bg-teal-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-400 mt-4"
+            className="w-full h-[50px] bg-[#7b2cbf] text-white font-semibold py-2 px-4 rounded-md hover:bg-[#4a1b74] focus:outline-none focus:ring-2 focus:ring-teal-400 mt-4"
             disabled={!emailVerified}
           >
             Sign Up

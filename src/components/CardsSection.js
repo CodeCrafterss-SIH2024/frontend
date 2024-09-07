@@ -8,34 +8,20 @@ const CardsSection = () => {
   const cards = [
     {
       image: image1,
-      title: 'Card Title 1',
-      description: 'Brief description of the content or feature related to this card.',
+      title: 'Volunteer with Us',
+      description: 'Join our team of volunteers and help us spread constitutional literacy across the nation. Whether  or simply passionate about civic education.',
     },
     {
       image: image2,
-      title: 'Card Title 2',
-      description: 'Brief description of the content or feature related to this card.',
+      title: 'Share Your Knowledge',
+      description: 'Contribute to our platform by sharing your expertise or experiences related to constitutional law and civic engagemen.',
     },
     {
       image: image3,
-      title: 'Card Title 3',
-      description: 'Brief description of the content or feature related to this card.',
+      title: 'Partner with Us',
+      description: 'Collaborate with us on projects that promote constitutional literacy and civic education in your community or organization.',
     },
-    {
-      image: image4,
-      title: 'Card Title 4',
-      description: 'Brief description of the content or feature related to this card.',
-    },
-    {
-      image: image5,
-      title: 'Card Title 5',
-      description: 'Brief description of the content or feature related to this card.',
-    },
-    {
-      image: image1,
-      title: 'Card Title 6',
-      description: 'Brief description of the content or feature related to this card.',
-    },
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -53,12 +39,13 @@ const CardsSection = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-100">
+    <section className=" bg-gray-100 py-12">
+         <h1 className='text-black text-center mb-[20px] text-7xl '>How You Can Contribute</h1>
       <div className="container mx-auto">
         <div className="relative">
           {/* Cards Wrapper */}
           <div
-            className="flex transition-transform duration-500 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out py-3"
             style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
           >
             {cards.map((card, index) => (
@@ -73,18 +60,7 @@ const CardsSection = () => {
           </div>
 
           {/* Next & Previous Buttons */}
-          <button
-            onClick={handlePrevClick}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-teal-600 text-white px-4 py-2 rounded-l-lg shadow-lg hover:bg-teal-700 transition duration-300"
-          >
-            Previous
-          </button>
-          <button
-            onClick={handleNextClick}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-teal-600 text-white px-4 py-2 rounded-r-lg shadow-lg hover:bg-teal-700 transition duration-300"
-          >
-            Next
-          </button>
+         
         </div>
       </div>
     </section>
