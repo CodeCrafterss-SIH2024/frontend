@@ -14,6 +14,7 @@ import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
 import CommunityChat from './components/CommunityChat';
+import Vicepresident from './pages/Vicepresident';
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path='/vicepresident' element={<Vicepresident/>}/>
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>
