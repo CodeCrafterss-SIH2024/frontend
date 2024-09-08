@@ -43,7 +43,7 @@ const NewHeader = () => {
       >
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-extrabold font-lobster flex items-center">
-            <img src={logo} alt="Website Logo" className="w-[120px] h-[120px] my-[-50px] mr-4" />
+            <img src={logo} alt="Website Logo" className="w-[70px] h-[80px] my-[-50px] mr-4" />
             Sansthaein Aur Samvidhan
           </h1>
           <nav className="hidden md:flex space-x-4 mr-[20px]">
