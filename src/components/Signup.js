@@ -589,6 +589,7 @@ import { toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Loader from './Loader'; // Import the Loader component
+import  image1 from '../img/loginimg.jpg'
 
 const Signup = () => {
   const [username, setUsername] = useState('');
@@ -661,7 +662,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-cover"
+     style={{ backgroundImage: `url(${image1})` }}>
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-3xl font-extrabold text-center text-[#7b2cbf] mb-6">Signup</h2>
         <form onSubmit={handleSignup}>
