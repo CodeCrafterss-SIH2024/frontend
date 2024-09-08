@@ -11,9 +11,22 @@ const MainPage = () => {
       {/* <h1 className='mt-[100px]'>this is my main page</h1> */}
       <div className='body'>
         <img src={Parliament} className='parliament'/>
-        <img src={Boy} className='boy1'/>
-        <img src={Boy} className='boy2'/>
-        <img src={Boy} className='boy3'/>  
+
+        <div className='boy1'>
+            <img src={Boy} />
+            <h3>Legislature</h3>
+        </div>
+
+        <div className='boy2'>
+            <img src={Boy} />
+            <h3>Executive</h3>
+        </div>
+
+        <div className='boy3'>
+            <img src={Boy} />
+            <h3>Judiciary</h3>
+        </div>
+
       </div>
       
     </div>
