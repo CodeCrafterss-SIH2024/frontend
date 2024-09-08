@@ -22,7 +22,7 @@ const JudgeVerdict = ({ judge, messages }) => {
       />
       <button
         onClick={handleVerdict}
-        className="px-4 py-2 bg-green-600 text-white font-semibold rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 flex items-center"
+        className="px-4 py-2 bg-[#4b4fc5] text-white font-semibold rounded-md shadow-sm hover:bg-[#2f33ad] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#363989] flex items-center"
       >
         Submit Verdict
         <FaCheck className="ml-2" />
