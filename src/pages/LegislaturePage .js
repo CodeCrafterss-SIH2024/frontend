@@ -1,10 +1,14 @@
-import React from 'react'
-import NewHeader from '../components/NewHeader'
+import React from 'react';
+import NewHeader from '../components/NewHeader';
+import './LegislaturePage.css';
 function LegislaturePage () {
   return (
     <div>
     <NewHeader/>
-      this is a Legislature page
+      <section className=''>
+        <p className='sec-1'>Understanding the Legislative Branch of the Indian Constitution</p>
+      </section>
+      
     </div>
   )
 }

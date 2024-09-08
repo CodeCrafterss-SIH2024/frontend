@@ -2,18 +2,6 @@
     height: 100vh;
     width: 100vw;
 }
-/* Styling for the image */
-/* .image-container img {
-  width: 100%;
-  transition: transform 0.3s ease; 
-  transform-style: preserve-3d; 
-} */
-
-/* Hover effect for the image */
-/* .image-container img:hover {
-  transform: scale(1.1) rotateX(0deg) rotateY(0deg); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-} */
 
 .parliament{
     position: absolute;

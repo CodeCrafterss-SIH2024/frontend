@@ -1,0 +1,16 @@
+.sec-1{
+    background-color:  rgb(255, 177, 21);
+    position: absolute;
+    top: 22%;
+    color: rgb(98, 7, 154);
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0 rgba(236, 233, 233, 0.628), 0 6px 20px 0 rgba(255, 255, 255, 0.384) inset;
+}
+
+h3{
+
+}
