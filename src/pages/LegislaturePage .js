@@ -1,5 +1,6 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
+import imagelig from '../img/Frontloader.jpg'
 
 function LegislaturePage () {
   return (
