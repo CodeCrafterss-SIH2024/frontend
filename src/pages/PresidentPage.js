@@ -1,6 +1,6 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
-import '../styles/PresidentPage.css'; // Make sure this CSS file exists
+import './PresidentPage.css'; // Make sure this CSS file exists
 
 const PresidentPage = () => {
   const articles = [

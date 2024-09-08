@@ -25,7 +25,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-      <Route path='/vicepresident' element={<Vicepresident/>}/>
+      <Route path='/president' element={<PresidentPage/>}/>
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>
