@@ -47,7 +47,7 @@ const NewHeader = () => {
             Sansthaein Aur Samvidhan
           </h1>
           <nav className="hidden md:flex space-x-4 mr-[20px]">
-            <Link to="/explore" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Explore</Link>
+            <Link to="/" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Home</Link>
             <Link to="/playnow" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Play now</Link>
             <Link to="/experts" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Experts</Link>
             <Link to="/community" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Community</Link>
