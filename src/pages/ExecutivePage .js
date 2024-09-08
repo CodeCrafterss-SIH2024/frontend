@@ -33,10 +33,10 @@ function ExecutivePage() {
       <h2 className="text-2xl font-bold mb-4"></h2>
       <p className="text-lg text-gray-700">
       The executive is the organ that implements the laws enacted by the legislature and enforces the will of the state.
+<br/><br/>
+&#x25CF; It is the administrative head of the government.
 <br/>
-It is the administrative head of the government.
-<br/>
-Ministers including the Prime/Chief Ministers and President/Governors form part of the executive.
+&#x25CF; Ministers including the Prime/Chief Ministers and President/Governors form part of the executive.
 <br/>
 
 
