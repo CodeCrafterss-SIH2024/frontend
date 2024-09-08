@@ -4,6 +4,7 @@ function JudiciaryPage () {
   return (
     <div>
     <NewHeader/>
+    <h1>mohighh</h1>
       this is judiciary page
     </div>
   )
