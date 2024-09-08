@@ -8,6 +8,7 @@ import AdminPanel from './components/AdminPanel';
 import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 import MainPage from './pages/MainPage';
+import Judgegame from './components/Judgegame';
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -15,6 +16,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path= "/playnow" element={<Judgegame/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
