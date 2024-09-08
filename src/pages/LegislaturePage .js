@@ -4,11 +4,13 @@ import './LegislaturePage.css';
 function LegislaturePage () {
   return (
     <div>
-<<<<<<< HEAD
-      this is a Legislature page.
-=======
-    <NewHeader/>
-      this is a Legislature page
+      <NewHeader/>
+      <section className='sec-1'>
+        <p>Understanding the Legislative Branch of the Indian Constitution</p>
+        {/* <div className='box'>study overview</div>
+        <div className='box'></div>
+        <div className='box'></div> */}
+      </section>
     </div>
   )
 }
