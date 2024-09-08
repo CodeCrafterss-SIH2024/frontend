@@ -23,7 +23,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
-        <Route path= "/playnow" element={<Judgegame/>}/>
+        <Route path= "/debate-section" element={<Judgegame/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
