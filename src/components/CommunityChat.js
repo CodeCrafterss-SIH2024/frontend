@@ -33,14 +33,14 @@ const CommunityChat = () => {
       
       {/* Header Section */}
       <header className="bg-[#9d4edd] text-white p-4 flex items-center">
-        <img src={comlogo} alt="Community Logo" className="w-16 mr-4" />
-        <h1 className="text-3xl font-bold">Community Chat</h1>
+        <img src={comlogo} alt="Community Logo" className="w-20 mr-4" />
+        <h1 className="text-5xl font-bold">Community Chat</h1>
       </header>
 
       {/* Background Images */}
       <div className="absolute inset-0 flex justify-between opacity-80">
-        <img src={background2} alt="Background 1" className="h-1/2 mt-20 ml-4 object-cover rounded-md shadow-md" />
-        <img src={background1} alt="Background 2" className="h-1/3 mt-[30%] mr-4 object-cover rounded-md shadow-md" />
+        <img src={background2} alt="Background 1" className="h-1/2 mt-[10%] ml-[4%] object-cover rounded-md shadow-md" />
+        <img src={background1} alt="Background 2" className="h-2/5 mt-[30%] mr-10 object-cover rounded-md shadow-md" />
       </div>
 
       {/* Main Content */}
@@ -48,7 +48,8 @@ const CommunityChat = () => {
         <h2 className="text-center text-3xl font-semibold mb-6 ml-8 text-black">Join the Conversation, Join the Community</h2>
 
         {/* Chat Section */}
-        <section className="p-6 ml-[18%] bg-white/80 rounded-lg shadow-lg backdrop-blur-lg border border-white/30 w-[600px]">
+        {/* bg-white/80 rounded-lg shadow-lg backdrop-blur-lg border border-white/30 */}
+        <section className="p-6 ml-[18%] bg-white bg-opacity-20 rounded-xl shadow-lg backdrop-blur-sm border border-white border-opacity-30 w-[600px]">
           <div className="max-h-96 overflow-y-auto mb-4 p-4 bg-gray-100 rounded-lg shadow-inner">
             {messages.length === 0 ? (
               <p className="text-center text-gray-600">No messages yet. Start the conversation!</p>
