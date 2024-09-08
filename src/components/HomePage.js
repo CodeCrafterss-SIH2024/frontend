@@ -194,7 +194,8 @@ import CardsSection from '../components/CardsSection';
 import Loader from './Firstloader'
 import SectionPart1 from './SectionPart1';
 import Sectionpart2 from './Sectionpart2';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import MainPage from '../pages/MainPage';
 
 const HomePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -255,7 +256,7 @@ const HomePage = () => {
           </h1>
           <nav className="hidden md:flex space-x-4 mr-[20px]">
          
-            <Link to="/explore" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Explore</Link>
+            <Link to="/main-page" className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Explore</Link>
            
             <Link to="/login"  className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Login</Link>
             <Link to="/signup"  className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">Signup</Link>

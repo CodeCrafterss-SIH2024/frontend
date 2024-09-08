@@ -7,9 +7,10 @@ import AdultDashboard from './components/AdultDashboard';
 import AdminPanel from './components/AdminPanel';
 import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
-
+import MainPage from './pages/MainPage';
 
 import { ToastContainer } from 'react-toastify';
+import MainPage from './pages/MainPage';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/reset-password" element={<ResetPassword />} /> {/* Add the ResetPassword route */}
         <Route path="/" element={<HomePage />} />
+        {/* explore wala page */}
+        <Route path="/main-page" element={<MainPage />} />
       </Routes>
       <ToastContainer />
     </Router>
