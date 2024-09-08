@@ -14,7 +14,8 @@ import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
 import CommunityChat from './components/CommunityChat';
-import Vicepresident from './pages/Vicepresident';
+// import President from './pages/President';
+import PresidentPage from './pages/PresidentPage';
 
 // import { ToastContainer } from 'react-toastify';
 
