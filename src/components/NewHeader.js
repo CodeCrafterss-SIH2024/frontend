@@ -159,7 +159,7 @@ const NewHeader = () => {
               </button>
               {isPlayNowDropdownOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-lg">
-                  <Link to="/quick-section" className="block px-4 py-2 hover:bg-gray-200 transition duration-300">Quick Section</Link>
+                  <Link to="/quiz-section" className="block px-4 py-2 hover:bg-gray-200 transition duration-300">Quiz Section</Link>
                   <Link to="/crossword-puzzle" className="block px-4 py-2 hover:bg-gray-200 transition duration-300">Crossword Puzzle</Link>
                   <Link to="/debate-section" className="block px-4 py-2 hover:bg-gray-200 transition duration-300">Debate Section</Link>
                 </div>
@@ -202,7 +202,7 @@ const NewHeader = () => {
               </button>
               {isPlayNowDropdownOpen && (
                 <div className="bg-[#8B5FE3] text-white mt-2 rounded-lg">
-                  <Link to="/quick-section" className="block px-4 py-2 hover:bg-purple-600 transition duration-300">Quick Section</Link>
+                  <Link to="/quiz-section" className="block px-4 py-2 hover:bg-purple-600 transition duration-300">Quiz Section</Link>
                   <Link to="/crossword-puzzle" className="block px-4 py-2 hover:bg-purple-600 transition duration-300">Crossword Puzzle</Link>
                   <Link to="/debate-section" className="block px-4 py-2 hover:bg-purple-600 transition duration-300">Debate Section</Link>
                 </div>
