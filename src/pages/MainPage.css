@@ -1,36 +1,23 @@
-.body{
-    height: 100vh;
-    width: 100vw;
-}
-/* Styling for the image */
-/* .image-container img {
-  width: 100%;
-  transition: transform 0.3s ease; 
-  transform-style: preserve-3d; 
-} */
 
-/* Hover effect for the image */
-/* .image-container img:hover {
-  transform: scale(1.1) rotateX(0deg) rotateY(0deg); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
-} */
 
 .parliament{
     position: absolute;
-    top: 7%;
-    height: 135%;
-    width: 100%;
+    margin-top: 7%;
+    margin-left: 7%;
+    height: 85%;
+    width: 85%;
+    border: 2px solid black;
 }
 .boy1{
     position: absolute;
-     top: 62%;
+     top: 59%;
     left: 20%;
-    width: 12%;
+    width: 11%;
   transition: transform 0.3s ease; 
   transform-style: preserve-3d; 
 }
 .boy2{
-    position: relative;
+    position: absolute;
    top: 53%;
     left: 44%;
     width: 14%;
@@ -39,9 +26,9 @@
 }
 .boy3{
     position: absolute;
-    top: 61%;
-    left: 70%;
-    width: 12%;
+    top: 59%;
+    left: 68%;
+    width: 11%;
   transition: transform 0.3s ease; 
   transform-style: preserve-3d; 
 }
@@ -63,6 +50,7 @@ h3{
     color: rgb(79, 8, 145);
     font-weight: 800;
     font-size: 1rem;
+    border-radius: 20px;
     width: 200px;
     display: flex;
     justify-content: center;
