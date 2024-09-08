@@ -63,6 +63,7 @@ h3{
     color: rgb(79, 8, 145);
     font-weight: 800;
     font-size: 1rem;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;

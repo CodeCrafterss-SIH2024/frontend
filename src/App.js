@@ -9,8 +9,13 @@ import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 import MainPage from './pages/MainPage';
 import Judgegame from './components/Judgegame';
+import JudiciaryPage from './pages/JudiciaryPage ';
+import ExecutivePage from './pages/ExecutivePage ';
+import LegislaturePage from './pages/LegislaturePage ';
 
 // import { ToastContainer } from 'react-toastify';
+
+
 
 const App = () => {
   return (
@@ -25,8 +30,11 @@ const App = () => {
         <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="/reset-password" element={<ResetPassword />} /> {/* Add the ResetPassword route */}
         <Route path="/" element={<HomePage />} />
-        {/* explore wala page */}
+     
         <Route path="/main-page" element={<MainPage />} />
+        <Route path="/legislature" element={<LegislaturePage />} />
+      <Route path="/executive" element={<ExecutivePage />} />
+      <Route path="/judiciary" element={<JudiciaryPage />} />
       </Routes>
       {/* <ToastContainer /> */}
     </Router>
