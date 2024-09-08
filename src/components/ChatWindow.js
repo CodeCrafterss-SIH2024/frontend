@@ -16,8 +16,8 @@ const ChatWindow = ({ lawyer1, lawyer2, messages, addMessage }) => {
   };
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow-md max-w-md mx-auto">
-      <h3 className="text-lg font-semibold mb-4 text-center">
+    <div className="p-4 bg-white rounded-lg shadow-md max-w-md mx-auto mt-5">
+      <h3 className="text-lg font-semibold mb-4 text-center ">
         Conversation between {lawyer1} and {lawyer2}
       </h3>
       <div className="h-64 overflow-y-auto bg-gray-100 p-3 rounded-lg mb-4 border border-gray-200">

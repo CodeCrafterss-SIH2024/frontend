@@ -11,7 +11,7 @@ const JudgeVerdict = ({ judge, messages }) => {
 
   return (
     <div className="p-4 bg-white rounded-lg shadow-md max-w-md mx-auto mt-[20px]    ">
-      <h3 className="text-lg font-semibold mb-4 text-center">
+      <h3 className="text-2xl font-semibold mb-4 text-center">
         Judge {judge}'s Verdict
       </h3>
       <textarea
