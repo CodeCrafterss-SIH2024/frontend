@@ -121,6 +121,7 @@ import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Loader from './Loader'; // Import the Loader component
+import  image1 from '../img/loginimg.jpg'
 
 const ResetPassword = () => {
   const [step, setStep] = useState('requestEmail'); // Track the current step
@@ -165,7 +166,9 @@ const ResetPassword = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-200">
+    <div className="flex items-center justify-center min-h-screen bg-gray-200 bg-cover"
+        style={{ backgroundImage: `url(${image1})` }}
+    >
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           {step === 'requestEmail' ? 'Request Password Reset' : 'Reset Password'}
@@ -183,13 +186,13 @@ const ResetPassword = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf] "
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-[#7b2cbf]  text-white font-semibold py-2 px-4 rounded-md hover:bg-[#5a218b]   focus:outline-none focus:ring-2 focus:ring-[#471a6e] "
               disabled={loading} // Disable button when loading
             >
               {loading ? 'Sending...' : 'Send OTP'}
@@ -207,7 +210,7 @@ const ResetPassword = () => {
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
                 placeholder="Enter OTP"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf] "
                 required
               />
             </div>
@@ -221,13 +224,13 @@ const ResetPassword = () => {
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
                 placeholder="Enter new password"
-                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-[#7b2cbf] "
                 required
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-[#7b2cbf] focus:outline-none focus:ring-2 focus:ring-[#4b1c75]"
               disabled={loading} // Disable button when loading
             >
               {loading ? 'Resetting...' : 'Reset Password'}

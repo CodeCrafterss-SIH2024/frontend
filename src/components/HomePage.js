@@ -224,7 +224,7 @@ const HomePage = () => {
     // Simulate loading for 2-3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 300); // Adjust the time as needed (2500ms = 2.5 seconds)
+    }, 3000); // Adjust the time as needed (2500ms = 2.5 seconds)
 
     return () => clearTimeout(timer);
   }, []);
