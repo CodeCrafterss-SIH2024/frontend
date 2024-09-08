@@ -37,7 +37,7 @@ function LegislaturePage () {
           <h2 className="underline mb-3 text-[#8B5FE3]">Key Articles and Laws</h2>
           <ul className="list-none p-0">
             <li className="my-2">
-              <a href="https://en.wikipedia.org/wiki/Seventy-ninth_Amendment_of_the_Constitution_of_India" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
+              <a href="article_79.html" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
                 Article 79 - Constitution of Parliament
               </a>
             </li>
