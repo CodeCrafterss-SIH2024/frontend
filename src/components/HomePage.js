@@ -195,7 +195,7 @@ import Loader from './Firstloader'
 import SectionPart1 from './SectionPart1';
 import Sectionpart2 from './Sectionpart2';
 import Footer from '../components/Footer';
-import MainPage from '../pages/MainPage';
+// import MainPage from '../pages/MainPage';
 
 const HomePage = () => {
   const [isScrolled, setIsScrolled] = useState(false);

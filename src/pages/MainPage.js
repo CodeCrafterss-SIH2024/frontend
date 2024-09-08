@@ -5,6 +5,7 @@ const MainPage = () => {
   return (
     <div>
       <NewHeader/>
+      <h1 className='mt-[100px]'>this is my main page</h1>
     </div>
   )
 }

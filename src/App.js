@@ -9,13 +9,13 @@ import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 import MainPage from './pages/MainPage';
 
-import { ToastContainer } from 'react-toastify';
-import MainPage from './pages/MainPage';
+// import { ToastContainer } from 'react-toastify';
 
 const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/child-dashboard" element={<ChildDashboard />} />
@@ -26,7 +26,7 @@ const App = () => {
         {/* explore wala page */}
         <Route path="/main-page" element={<MainPage />} />
       </Routes>
-      <ToastContainer />
+      {/* <ToastContainer /> */}
     </Router>
   );
 };
