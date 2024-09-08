@@ -12,6 +12,7 @@ import Judgegame from './components/Judgegame';
 import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
+import Leaderheader from './pages/Leaderheader';
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -21,7 +22,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-      <Route path= "/playnow" element={<Judgegame/>}/>
+        <Route path="/leaderboard" element={<Leaderheader/>}/>
+        <Route path= "/playnow" element={<Judgegame/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
