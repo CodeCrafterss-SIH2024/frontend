@@ -1,6 +1,6 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
-import './LegislaturePage.css';
+// import './LegislaturePage.css';
 function LegislaturePage () {
   return (
 

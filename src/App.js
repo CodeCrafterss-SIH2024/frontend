@@ -13,6 +13,7 @@ import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
+import CommunityChat from './components/CommunityChat';
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
+         <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
