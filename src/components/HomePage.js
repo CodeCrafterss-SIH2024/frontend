@@ -81,6 +81,7 @@ const HomePage = () => {
           <Link to="/children" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
             Children
           </Link>
+           
           <Link to="/main-page" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
             Adult
           </Link>
