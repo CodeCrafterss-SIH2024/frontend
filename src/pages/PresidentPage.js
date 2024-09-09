@@ -73,6 +73,8 @@ const PresidentPage = () => {
             <div className="mod2">
         
          <p>Start Learning</p>
+
+         
       
           </div>  
 
