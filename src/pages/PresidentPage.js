@@ -1,7 +1,5 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
-
-
 import './PresidentPage.css'; // Make sure this CSS file exists
 import PresidentPhotoo from '../img/presiii.jpg';
 

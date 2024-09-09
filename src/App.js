@@ -20,8 +20,8 @@ import CrossMain from './pages/CrossMain';
 import CommunityChat from './components/CommunityChat';
 // import President from './pages/President';
 import PresidentPage from './pages/PresidentPage';
-
-
+// import CrossMain from './pages/CrossMain';
+import QuizMain from './pages/quizMain';
 // import { ToastContainer } from 'react-toastify';
 
 
@@ -30,7 +30,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-
+      <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
         
       <Route path='/experts' element={<ExpertMain/>}/>

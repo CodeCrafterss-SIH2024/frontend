@@ -1,8 +1,8 @@
 .crossword-container {
+    width: 100vw;
     padding: 2rem;
     text-align: center;
 }
-
 .crossword-title {
     margin-bottom: 2rem;
     color: whitesmoke; /* Tailwind Purple-600 */
@@ -22,7 +22,7 @@
     width: 2.5rem;
     height: 2.5rem;
     text-align: center;
-    border: 1px solid #E5E7EB; /* Tailwind Gray-200 */
+    border: 1px solid black; /* Tailwind Gray-200 */
 }
 
 .bg-black {
@@ -34,12 +34,29 @@
 }
 
 .text-white {
-    color: #FFFFFF; /* White text color for "Constitution" */
+    color:white; /* White text color for "Constitution" */
 }
 
+
+
+
+
+
+
+
+
 .text-black {
-    color: #000000; /* Black text color for other words */
+    color:rgb(0, 0, 0); /* Black text color for other words */
 }
+
+
+
+
+
+
+
+
+
 
 .crossword-input {
     width: 100%;
@@ -48,7 +65,19 @@
     font-size: 1.125rem; /* Tailwind text-lg */
     border: none;
     background-color: transparent; /* Ensure the background is transparent */
+   
 }
 
+.clues-title{
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 2em;
+    text-decoration: underline;
+}
 
+#across-clues-unique,#down-clues-unique{
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
 
