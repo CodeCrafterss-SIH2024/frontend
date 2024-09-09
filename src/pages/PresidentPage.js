@@ -1,10 +1,10 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
-<<<<<<< HEAD
+
 // import '../styles/PresidentPage.css'; // Make sure this CSS file exists
-=======
+
 import './PresidentPage.css'; // Make sure this CSS file exists
->>>>>>> 080410a4a74c812b634ec562ebfba7a26b534306
+
 
 const PresidentPage = () => {
   const articles = [

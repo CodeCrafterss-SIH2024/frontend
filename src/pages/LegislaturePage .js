@@ -38,12 +38,12 @@ function LegislaturePage () {
           <h2 className="underline mb-3 text-[#8B5FE3]">Key Articles and Laws</h2>
           <ul className="list-none p-0">
             <li className="my-2">
-              <a href="article_79.html" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
+              <a href="https://www.constitutionofindia.net/articles/article-79-constitution-of-parliament/" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
                 Article 79 - Constitution of Parliament
               </a>
             </li>
             <li className="my-2">
-              <a href="article_80.html" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
+              <a href="https://www.constitutionofindia.net/articles/article-80-composition-of-the-council-of-states/" className="text-[#8B5FE3] font-bold hover:text-[#673ab7] hover:underline">
                 Article 80 - Composition of Rajya Sabha
               </a>
             </li>
