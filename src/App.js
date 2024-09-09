@@ -13,6 +13,8 @@ import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
+import ExpertMain from './pages/ExpertMain';
+import CrossMain from './pages/CrossMain';
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -22,6 +24,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/crossword-puzzle" element={<CrossMain/>}/>
+      <Route path="/experts" element={<ExpertMain/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
