@@ -145,6 +145,8 @@ const HomePage = () => {
         {/* Cards Section */}
         <CardsSection />
 
+      
+     
         {/* Features Section */}
         <section className="py-10 bg-[#E0D9EE]">
         <h1 className='text-black text-center mb-[20px] text-7xl '>Our Features</h1>
@@ -166,6 +168,28 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
+{/* 
+     <div class="flex justify-center">
+     <Link to="/explore">
+        <button class="px-10 py-5  mb-4 bg-[#1b4e43] text-white font-semibold hover:border-4 hover:border-white  rounded-lg shadow-lg hover:bg-[#1c7a66] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#363989] transition duration-300 ease-in-out">
+            Explore More
+        </button>
+        </Link>
+    </div> */}
+
+    <div className="flex justify-center">
+  <Link to="/explore">
+    <button className="px-10 py-5 mb-4 border-black border-4 bg-[#f7f02a] text-black font-semibold hover:border-4 hover:border-white rounded-lg shadow-lg hover:bg-[#1c7a66] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#363989] transform transition duration-300 ease-in-out hover:-translate-y-2 active:translate-y-1">
+      Explore More
+    </button>
+  </Link>
+</div>
+
+
+
+
+
         <Footer/>
         
         {/* Chatbot */}
