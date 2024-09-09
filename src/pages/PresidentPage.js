@@ -74,7 +74,10 @@ const PresidentPage = () => {
         
          <p>Start Learning</p>
       
-      </div>  
+          </div>  
+
+
+
     </div>
   );
 };
