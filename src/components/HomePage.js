@@ -78,9 +78,14 @@ const HomePage = () => {
         </button>
         {/* Dropdown Menu */}
         <div className="absolute left-0 hidden group-hover:block bg-[#eeeaf0] text-black w-full">
-          <Link to="/children" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
-            Children
-          </Link>
+
+        <a href="https://sansthaein-aur-sanvidhan-child-section.github.io/ChildSection/" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
+         Children
+       </a>
+
+
+           
+
           <Link to="/main-page" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
             Adult
           </Link>

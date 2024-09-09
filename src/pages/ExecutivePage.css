@@ -1,0 +1,41 @@
+.mod{
+    background-color:  rgb(255, 177, 21);
+    position: absolute;
+    top: 22%;
+    color: rgb(37, 4, 58);
+    width: 100vw;
+    height: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0 rgba(236, 233, 233, 0.628), 0 6px 20px 0 rgba(255, 255, 255, 0.384) inset;
+}
+.cards{
+    position: absolute;
+    margin-top: 20%;
+}
+
+.mod2{
+    background-color:  rgb(255, 177, 21);
+    
+    
+    color: rgb(37, 4, 58);
+    width: 100vw;
+    height: 3rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0 rgba(236, 233, 233, 0.628), 0 6px 20px 0 rgba(255, 255, 255, 0.384) inset;
+}
+
+
+.box{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 3rem;
+    height: 3rem;
+    background-color: azure;
+}
