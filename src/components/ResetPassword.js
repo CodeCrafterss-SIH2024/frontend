@@ -119,9 +119,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast,ToastContainer } from 'react-toastify';
 import Loader from './Loader'; // Import the Loader component
 import  image1 from '../img/loginimg.jpg'
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 
 const ResetPassword = () => {
   const [step, setStep] = useState('requestEmail'); // Track the current step
@@ -169,6 +170,18 @@ const ResetPassword = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-200 bg-cover"
         style={{ backgroundImage: `url(${image1})` }}
     >
+    <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        style={{ zIndex: 9999 }} // Ensures it shows above other content
+      />
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           {step === 'requestEmail' ? 'Request Password Reset' : 'Reset Password'}
