@@ -25,7 +25,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
+<<<<<<< HEAD
       <Route path='/vicepresident' element={<PresidentPage/>}/>
+=======
+      <Route path='/president' element={<PresidentPage/>}/>
+>>>>>>> 080410a4a74c812b634ec562ebfba7a26b534306
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>
