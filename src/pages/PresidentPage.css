@@ -14,16 +14,51 @@
     min-height: 100vh;
   }
   
+  /* Title Styling */
   .page-title {
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
   }
   
+  /* Introduction Section */
+  .intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  
+  .president-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .intro-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .intro-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
   /* Cards Container */
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 20px;
     margin: 0 auto;
     max-width: 1200px;
@@ -63,4 +98,18 @@
     color: #555;
     line-height: 1.5;
   }
+  /* Read More Button */
+.read-more-button {
+    background-color: #7b2cbf;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
   
+  .read-more-button:hover {
+    background-color: #5a1f8e;
+  }
