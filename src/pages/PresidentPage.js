@@ -1,7 +1,6 @@
 import React from 'react';
 import NewHeader from '../components/NewHeader';
 
-// import '../styles/PresidentPage.css'; // Make sure this CSS file exists
 
 import './PresidentPage.css'; // Make sure this CSS file exists
 import PresidentPhotoo from '../img/presiii.jpg';
@@ -38,7 +37,7 @@ const PresidentPage = () => {
   return (
     <div className="president-page">
       <NewHeader />
-      <h1 className="page-title">Understanding the Role of the President of India</h1>
+      <h1 className="page-title mt-[100px]">Understanding the Role of the President of India</h1>
       
       <section className="intro-section">
         <img src={PresidentPhotoo} alt="President" className="president-photo" />
@@ -77,6 +76,8 @@ const PresidentPage = () => {
          
       
           </div>  
+
+
 
 
 
