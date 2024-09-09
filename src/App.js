@@ -13,9 +13,14 @@ import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
+
+import ExpertMain from './pages/ExpertMain';
+import CrossMain from './pages/CrossMain';
+
 import CommunityChat from './components/CommunityChat';
 // import President from './pages/President';
 import PresidentPage from './pages/PresidentPage';
+
 
 // import { ToastContainer } from 'react-toastify';
 
@@ -25,7 +30,14 @@ const App = () => {
   return (
     <Router>
       <Routes>
+
+      <Route path='/crossword-puzzle' element={<CrossMain/>}/>
+        
+      <Route path='/experts' element={<ExpertMain/>}/>
+      <Route path='/vicepresident' element={<PresidentPage/>}/>
+
       <Route path='/president' element={<PresidentPage/>}/>
+
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
         <Route path= "/debate-section" element={<Judgegame/>}/>

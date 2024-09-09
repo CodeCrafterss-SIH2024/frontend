@@ -1,9 +1,13 @@
 
 import React from 'react';
 import NewHeader from '../components/NewHeader';
+
+// import '../styles/PresidentPage.css'; // Make sure this CSS file exists
+
 import './PresidentPage.css'; // Make sure this CSS file exists
 // import president-photo from '../images/p.jpeg';
 // import presidentPhoto from '../images/p.jpeg';
+
 
 const PresidentPage = () => {
   const articles = [

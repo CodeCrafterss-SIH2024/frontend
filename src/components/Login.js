@@ -95,8 +95,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
-import { toast } from 'react-toastify';
+import { toast,ToastContainer } from 'react-toastify';
 import  image1 from '../img/loginimg.jpg'
+import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -110,10 +111,11 @@ const Login = () => {
       localStorage.setItem('token', res.data.token);
       
       const userRole = jwtDecode(res.data.token).role;
+      console.log(userRole);
       if (userRole === 'child') {
-        navigate('/child-dashboard');
+        window.location.href = 'https://sansthaein-aur-sanvidhan-child-section.github.io/ChildSection/';
       } else if (userRole === 'adult') {
-        navigate('/adult-dashboard');
+        navigate('/main-page');
       } else if (userRole === 'admin') {
         navigate('/admin-panel');
       }
@@ -128,6 +130,18 @@ const Login = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-cover " 
     style={{ backgroundImage: `url(${image1})` }}
       >
+        <ToastContainer 
+        position="top-right" 
+        autoClose={3000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false} 
+        pauseOnFocusLoss 
+        draggable 
+        pauseOnHover 
+        style={{ zIndex: 9999 }} // Ensures it shows above other content
+      />
       <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-4xl font-extrabold text-center text-[#581e8a] mb-6">Login</h2>
         <form onSubmit={handleLogin}>
