@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -8,7 +9,7 @@ import AdminPanel from './components/AdminPanel';
 import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 import MainPage from './pages/MainPage';
-import Judgegame from './components/Judgegame';
+
 import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
@@ -24,12 +25,17 @@ import PresidentPage from './pages/PresidentPage';
 import QuizMain from './pages/quizMain';
 // import { ToastContainer } from 'react-toastify';
 
+import RoomMain from './components/RoomMain';
+
+
 
 
 const App = () => {
+ 
   return (
     <Router>
       <Routes>
+    
       <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
         
@@ -40,7 +46,7 @@ const App = () => {
 
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
-        <Route path= "/debate-section" element={<Judgegame/>}/>
+        <Route path= "/debate-section" element={<RoomMain/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
@@ -61,3 +67,4 @@ const App = () => {
 };
 
 export default App;
+

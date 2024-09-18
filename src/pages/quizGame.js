@@ -35,7 +35,9 @@ const QuizGame = () => {
     const [timeLeft, setTimeLeft] = useState(15);
     const [timerInterval, setTimerInterval] = useState(null);
     const [resultMessage, setResultMessage] = useState('');
+    const [resultStatus, setResultStatus] = useState(''); // For tracking result type (correct, wrong, timeup)
     const [showNextButton, setShowNextButton] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
         loadQuestion();
@@ -48,6 +50,7 @@ const QuizGame = () => {
         setTimerInterval(interval);
 
         setResultMessage('');
+        setResultStatus('');
         setShowNextButton(false);
     };
 
@@ -58,8 +61,10 @@ const QuizGame = () => {
         if (selectedOption === correctAnswer) {
             setScore(score + 1);
             setResultMessage('Correct!');
+            setResultStatus('correct'); // Set result status to correct
         } else {
             setResultMessage('Wrong!');
+            setResultStatus('wrong'); // Set result status to wrong
         }
 
         setShowNextButton(true);
@@ -70,8 +75,7 @@ const QuizGame = () => {
             setCurrentQuestionIndex(currentQuestionIndex + 1);
         } else {
             clearInterval(timerInterval);
-            setResultMessage(`Congratulations! You've completed the quiz. Your final score is: ${score} / ${questions.length}`);
-            setShowNextButton(false);
+            setShowPopup(true); // Show the final score popup
         }
     };
 
@@ -80,6 +84,7 @@ const QuizGame = () => {
             if (prevTimeLeft <= 1) {
                 clearInterval(timerInterval);
                 setResultMessage("Time's up!");
+                setResultStatus('timeup'); // Set result status to timeup
                 setShowNextButton(true);
                 return 0;
             }
@@ -89,6 +94,20 @@ const QuizGame = () => {
 
     const updateProgressBar = () => {
         return ((currentQuestionIndex + 1) / questions.length) * 100;
+    };
+
+    const restartQuiz = () => {
+        setScore(0);
+        setCurrentQuestionIndex(0);
+        setShowPopup(false);
+    };
+
+    // Conditionally render class for result message
+    const getResultClass = () => {
+        if (resultStatus === 'correct') return 'quizGame-result-correct';
+        if (resultStatus === 'wrong') return 'quizGame-result-wrong';
+        if (resultStatus === 'timeup') return 'quizGame-result-timeup';
+        return '';
     };
 
     return (
@@ -116,7 +135,7 @@ const QuizGame = () => {
                     ))}
                 </div>
             </div>
-            <div className="quizGame-result-unique">{resultMessage}</div>
+            <div className={`quizGame-result-unique ${getResultClass()}`}>{resultMessage}</div>
             {showNextButton && (
                 <button
                     className="quizGame-next-btn-unique"
@@ -128,6 +147,19 @@ const QuizGame = () => {
             <div className="quizGame-timer-unique">
                 Time Left: <span className="quizGame-time-unique">{timeLeft}</span> seconds
             </div>
+
+            {/* Final Score Popup */}
+            {showPopup && (
+                <div className="quizGame-popup-unique">
+                    <div className="quizGame-popup-content-unique">
+                        <h2 className=' text-[#b18e4e]'>Quiz Completed!</h2>
+                        <p className='mt-3'>Your score: {score} / {questions.length}</p>
+                        <button className="quizGame-restart-btn-unique mt-6" onClick={restartQuiz}>
+                            Play Again
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

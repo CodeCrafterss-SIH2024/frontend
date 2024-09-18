@@ -1,4 +1,4 @@
-.quizGame-container-unique {
+/* .quizGame-container-unique {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #4A90E2, #9013FE);
     margin: 0;
@@ -111,4 +111,176 @@
     margin-top: 15px;
     font-size: 1.1em;
     color: #ffffff;
+} */
+
+
+
+
+
+
+
+
+
+
+/* Quiz Game Container */
+.quizGame-container-unique {
+    background-color: white; /* White background */
+    color: #1E3A8A; /* Dark blue text color */
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    margin-top: 120px;
+}
+
+/* Title Styling */
+.quizGame-title-unique {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E40AF; /* Medium blue title */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Progress Bar Container */
+.quizGame-progress-container-unique {
+    background-color: #E0E7FF; /* Light blue background */
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+/* Progress Bar */
+.quizGame-progress-bar-unique {
+    height: 10px;
+    background-color: #3B82F6; /* Blue progress bar */
+    transition: width 0.5s ease-in-out;
+}
+
+/* Question Container */
+.quizGame-question-container-unique {
+    margin-bottom: 2rem;
+}
+
+/* Question Text */
+.quizGame-question-unique {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E3A8A; /* Dark blue for question text */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Option Buttons */
+.quizGame-options-container-unique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quizGame-option-unique {
+    background-color: #3B82F6; /* Blue background for options */
+    color: white; /* White text */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.quizGame-option-unique:hover {
+    background-color: #1E40AF; /* Darker blue on hover */
+}
+
+/* Result Message */
+.quizGame-result-unique {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.quizGame-result-correct {
+    color: green;
+}
+
+.quizGame-result-wrong {
+    color: red;
+}
+
+.quizGame-result-timeup {
+    color: yellow;
+}
+
+/* Add any other styles like popup, buttons, etc. */
+
+
+/* Next Button */
+.quizGame-next-btn-unique {
+    background-color: #1E40AF; /* Dark blue for next button */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    transition: background-color 0.3s ease;
+}
+
+.quizGame-next-btn-unique:hover {
+    background-color: #3B82F6; /* Lighter blue on hover */
+}
+
+/* Timer */
+.quizGame-timer-unique {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #1E3A8A; /* Dark blue */
+}
+
+.quizGame-time-unique {
+    font-weight: bold;
+    color: #ff2f00; /* Blue for timer */
+}
+.quizGame-popup-unique {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizGame-popup-content-unique {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.quizGame-restart-btn-unique {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quizGame-restart-btn-unique:hover {
+    background-color: #45a049;
 }
