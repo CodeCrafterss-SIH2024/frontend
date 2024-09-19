@@ -3,6 +3,7 @@ import fourpill from '../img/fourpills.jpg'
 import NewHeader from './NewHeader'
 import fourpill2 from '../img/fourpill2.jpg'
 import { Link } from 'react-router-dom'
+import './Secondmain.css'
 
 function Secondmain() {
   return (
@@ -15,29 +16,29 @@ function Secondmain() {
     <div className="flex justify-between w-full p-4">
       {/* First Button */}
       <Link to="/fund_rights">
-        <button className=" text-white w-[200px] h-full   px-[150px] py-[300px] rounded">
+        <button className="div1 text-white w-[200px] h-full ml-[25px]  px-[150px] py-[300px] rounded">
           
         </button>
       </Link>
 
       {/* Second Button */}
       <Link to="/preamble">
-        <button className=" text-white px-4 py-2 rounded w-[200px] h-full   px-[150px] py-[300px]">
+        <button className=" div1 text-white px-4 py-2 ml-[-20px] rounded w-[200px] h-full   px-[150px] py-[300px]">
           
         </button>
       </Link>
 
       {/* Third Button */}
       <Link to="/dsps">
-        <button className=" text-white px-4 py-2 rounded w-[200px] h-full   px-[150px] py-[300px]">
+        <button className=" div1 text-white px-4 py-2 ml-[30px] rounded w-[200px] h-full   px-[150px] py-[300px]">
           
         </button>
       </Link>
 
       {/* Fourth Button */}
       <Link to="/duties">
-        <button className=" text-white px-4 py-2 rounded w-[200px] h-full   px-[150px] py-[300px]">
-          
+        <button className="div1 text-white px-4 py-2 mr-[30px] rounded w-[200px] h-full   px-[150px] py-[300px]">
+           
         </button>
       </Link>
     </div>

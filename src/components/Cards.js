@@ -7,7 +7,7 @@ const Cards = ({ imageSrc, title, description }) => {
       <img
         src={imageSrc}
         alt={title}
-        className="object-cover w-full h-full"
+        className=" w-full h-full"
       />
       
       {/* Details (hidden initially) */}

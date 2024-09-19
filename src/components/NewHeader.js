@@ -208,7 +208,7 @@ const NewHeader = () => {
         <img src={logo} alt="Website Logo" className="w-[150px] mt-[-50px] mb-[-50px]  h-[150px] mr-4" />
 
           <h1 className=" text-3xl font-extrabold flex items-center">
-            Sansthaein Aur Samvidhan
+          Nagrik Aur Samvidhan
           </h1>
           </div>
 
