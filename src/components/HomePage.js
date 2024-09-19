@@ -73,7 +73,7 @@ const HomePage = () => {
     <nav className="hidden md:flex space-x-4 mr-[20px]">
       {/* Dropdown for Explore */}
       <div className="relative group bg-yellow-400 rounded border-2 border-black">
-        <button className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">
+        <button className="text-black font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">
           Explore
         </button>
         {/* Dropdown Menu */}

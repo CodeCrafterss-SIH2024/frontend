@@ -66,9 +66,11 @@ export default function Frights() {
       
       {/* Cards below the header */}
       <div className="flex flex-col justify-evenly gap-8 items-center relative top-16">
-        <div className="mainBox">
+        <div className="mainBox w-full">
 
-        <Link to='/president'>
+        <div className="mainS1 flex flex-wrap justify-center gap-6  w-full ">
+       
+<Link to='/rt'>
         <Cards 
           imageSrc={image2}
           title="Right to Equality"
@@ -85,7 +87,8 @@ export default function Frights() {
           title="Right against Exploitation"
           description=" Prohibits human trafficking, forced labor, and child labor in hazardous environments."
         />
-        <Cards 
+
+       <Cards 
           imageSrc={image7}
           title="Right to Constitutional Remedies"
           description="Allows citizens to approach the courts to enforce Fundamental Rights if they are violated.
@@ -103,10 +106,12 @@ export default function Frights() {
 
 "
         />
-          
+        </div>
+       
         </div>
       
       </div>
+
     </div>
   );
 }

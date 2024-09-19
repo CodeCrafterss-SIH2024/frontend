@@ -23,6 +23,7 @@ import CommunityChat from './components/CommunityChat';
 import PresidentPage from './pages/PresidentPage';
 // import CrossMain from './pages/CrossMain';
 import QuizMain from './pages/quizMain';
+import RTequalitys from './pages/RTequalitys';
 // import { ToastContainer } from 'react-toastify';
 
 import RoomMain from './components/RoomMain';
@@ -64,7 +65,7 @@ const App = () => {
 
         <Route path="/legislature" element={<LegislaturePage />} />
       <Route path="/fund_rights" element={<Frights/>} />
-
+      <Route path="/rt" element={<RTequalitys/>}/>
         <Route path="/dsps" element={<DPSP />} />
       <Route path="/executive" element={<ExecutivePage />} />
       <Route path="/judiciary" element={<JudiciaryPage />} />
