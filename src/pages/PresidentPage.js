@@ -7,35 +7,35 @@ import PresidentPhotoo from '../img/presiii.jpg';
 const PresidentPage = () => {
   const articles = [
     {
-      title: 'Article 52',
-      content: 'Establishes the position of the President as the head of the state in India.',
+      title: 'Efficient Utilization of Resources',
+      content: 'Ensure optimum utilization of the country resources, including natural, financial, and human resources, to foster balanced economic growth.',
     },
     {
-      title: 'Article 53',
-      content: 'Vests all executive power of the Union in the President, exercised according to the Constitution.',
+      title: 'Promotion of Economic Development',
+      content: 'Plan and strategize measures to eliminate poverty and unemployment, and improve the overall standard of living.',
     },
     {
-      title: 'Article 54',
-      content: 'Describes the election process of the President through an Electoral College.',
+      title: 'Balanced Growth',
+      content: ' Focus on achieving balanced growth by reducing regional inequalities in terms of wealth and income.',
     },
     {
-      title: 'Article 56',
-      content: 'Defines the term of office for the President as five years, with conditions for resignation and removal.',
+      title: 'Social Welfare and Justice',
+      content: 'Incorporate social welfare into the growth model by aiming for the upliftment of weaker sections of society and promoting social justice.',
     },
     {
-      title: 'Article 61',
-      content: 'Outlines the procedure for impeachment of the President for constitutional violations.',
+      title: 'Modernization',
+      content: 'Encourage modernization of the industrial sector, technological progress, and scientific research, which were considered critical for India economic development.',
     },
     {
-      title: 'Article 75',
-      content: 'Empowers the President to appoint the Prime Minister and Council of Ministers.',
+      title: 'Subsequent Five-Year Plans',
+      content: 'Emphasized various sectors such as industry, infrastructure, healthcare, education, and poverty alleviation.',
     },
   ];
 
   return (
     <div className="president-page">
       <NewHeader />
-      <h1 className="page-title mt-[100px]">Understanding the Role of the President of India</h1>
+      <h1 className="page-title mt-[100px]">Establishment of Planning Commission</h1>
       
       <section className="intro-section">
         <img src={PresidentPhotoo} alt="President" className="president-photo" />
@@ -47,9 +47,12 @@ const PresidentPage = () => {
 
           <h2>Introduction</h2>
           <p>
-            The President of India is the ceremonial head of the state and the highest constitutional authority. This role encompasses various responsibilities including the appointment of the Prime Minister and other key officials, as well as the execution of executive powers according to the Constitution.
-           <br/><br/> The Indian President is the head of the state. He is the first citizen of India and is a symbol of solidarity, unity, and integrity of the nation. He is a part of Union Executive along with the Vice-President, Prime Minister, Council of Ministers, and Attorney-General of India.
-            
+          The Planning Commission of India was established on March 15, 1950, by an executive order of the Government of India. It was a non-constitutional and non-statutory body 
+          tasked with creating a centralized and systematic approach to economic planning in India.
+          <br />
+          <br />
+           The commission was instrumental in shaping the country’s
+           development trajectory post-independence, especially in terms of infrastructure, industrial growth, and modernization.
           </p>
         </div>
       </section>

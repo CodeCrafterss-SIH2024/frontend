@@ -26,8 +26,11 @@ import QuizMain from './pages/quizMain';
 // import { ToastContainer } from 'react-toastify';
 
 import RoomMain from './components/RoomMain';
+
 import Frights from './components/Frights';
 import Secondmain from './components/Secondmain';
+
+import DPSP from './components/DPSP';
 
 
 
@@ -43,7 +46,7 @@ const App = () => {
       <Route path='/experts' element={<ExpertMain/>}/>
       <Route path='/vicepresident' element={<PresidentPage/>}/>
 
-      <Route path='/president' element={<PresidentPage/>}/>
+      <Route path='/planning-commision' element={<PresidentPage/>}/>
 
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
@@ -58,8 +61,11 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
      
         <Route path="/main-page" element={<MainPage />} />
+
         <Route path="/legislature" element={<LegislaturePage />} />
       <Route path="/fund_rights" element={<Frights/>} />
+
+        <Route path="/dsps" element={<DPSP />} />
       <Route path="/executive" element={<ExecutivePage />} />
       <Route path="/judiciary" element={<JudiciaryPage />} />
       </Routes>

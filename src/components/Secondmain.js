@@ -28,7 +28,7 @@ function Secondmain() {
       </Link>
 
       {/* Third Button */}
-      <Link to="/dpsp">
+      <Link to="/dsps">
         <button className=" text-white px-4 py-2 rounded w-[200px] h-full   px-[150px] py-[300px]">
           
         </button>

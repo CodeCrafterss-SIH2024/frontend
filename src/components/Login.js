@@ -138,14 +138,16 @@ const Login = () => {
       console.log(decodedToken)
       console.log("mohit1")
       const username = decodedToken.user; // Assuming the token contains the username field
-    
+      const userId = decodedToken.id;
       localStorage.setItem('user', JSON.stringify({ username })); // Store username in localStorage
+      localStorage.setItem('userId', JSON.stringify({ userId }));
+      localStorage.setItem('email',JSON.stringify({email}));
 
       const userRole = decodedToken.role;
       if (userRole === 'child') {
         window.location.href = 'https://sansthaein-aur-sanvidhan-child-section.github.io/ChildSection/';
       } else if (userRole === 'adult') {
-        navigate('/main-page');
+        navigate('/adult');
       } else if (userRole === 'admin') {
         navigate('/admin-panel');
       }
