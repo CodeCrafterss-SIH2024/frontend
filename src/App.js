@@ -26,7 +26,8 @@ import QuizMain from './pages/quizMain';
 // import { ToastContainer } from 'react-toastify';
 
 import RoomMain from './components/RoomMain';
-
+import Frights from './components/Frights';
+import Secondmain from './components/Secondmain';
 
 
 
@@ -35,7 +36,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-    
+      <Route path='/adult' element={<Secondmain/>}/>
       <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
         
@@ -58,6 +59,7 @@ const App = () => {
      
         <Route path="/main-page" element={<MainPage />} />
         <Route path="/legislature" element={<LegislaturePage />} />
+      <Route path="/fund_rights" element={<Frights/>} />
       <Route path="/executive" element={<ExecutivePage />} />
       <Route path="/judiciary" element={<JudiciaryPage />} />
       </Routes>

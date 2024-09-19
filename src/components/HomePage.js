@@ -40,7 +40,7 @@ const HomePage = () => {
     // Simulate loading for 2-3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Adjust the time as needed (2500ms = 2.5 seconds)
+    }, 1000); // Adjust the time as needed (2500ms = 2.5 seconds)
 
     return () => clearTimeout(timer);
   }, []);
@@ -72,7 +72,7 @@ const HomePage = () => {
     </h1>
     <nav className="hidden md:flex space-x-4 mr-[20px]">
       {/* Dropdown for Explore */}
-      <div className="relative group">
+      <div className="relative group bg-yellow-400 rounded border-2 border-black">
         <button className="text-white font-semibold px-4 py-2 hover:bg-purple-600 transition duration-300">
           Explore
         </button>
@@ -86,7 +86,7 @@ const HomePage = () => {
 
            
 
-          <Link to="/main-page" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
+          <Link to="/adult" className="block px-4 py-2 hover:bg-[#a1a7a9] transition duration-300">
             Adult
           </Link>
         </div>
@@ -181,7 +181,7 @@ const HomePage = () => {
     <div className="flex justify-center">
   <Link to="/explore">
     <button className="px-10 py-5 mb-4 border-black border-4 bg-[#f7f02a] text-black font-semibold hover:border-4 hover:border-white rounded-lg shadow-lg hover:bg-[#1c7a66] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#363989] transform transition duration-300 ease-in-out hover:-translate-y-2 active:translate-y-1">
-      Explore More
+      Know More About the Constitution
     </button>
   </Link>
 </div>
