@@ -23,8 +23,8 @@ const MainPage = () => {
           <h3>Executive</h3>
         </Link>
 
-        <Link to="/judiciary" className='boy3'>
-          <img src={Boy} alt="Judiciary" />
+        <Link to="/pramble" className='boy3'>
+          <img src={Boy} alt="pramble" />
           <h3>Judiciary</h3>
         </Link>
       </div>

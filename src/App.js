@@ -14,6 +14,7 @@ import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
 
+
 import ExpertMain from './pages/ExpertMain';
 import CrossMain from './pages/CrossMain';
 
@@ -24,6 +25,8 @@ import PresidentPage from './pages/PresidentPage';
 import QuizMain from './pages/quizMain';
 // import { ToastContainer } from 'react-toastify';
 
+
+import Pramble from './pages/Pramble';
 
 
 const App = () => {
@@ -53,7 +56,7 @@ const App = () => {
         <Route path="/main-page" element={<MainPage />} />
         <Route path="/legislature" element={<LegislaturePage />} />
       <Route path="/executive" element={<ExecutivePage />} />
-      <Route path="/judiciary" element={<JudiciaryPage />} />
+      <Route path="/pramble" element={<Pramble />} />
       </Routes>
       {/* <ToastContainer /> */}
     </Router>
