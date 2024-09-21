@@ -11,7 +11,7 @@ function ExecutivePage() {
       {/* Header at the top */}
       <NewHeader />
 
-      <div className="mod">
+      <div className="mt-[100px] w-full text-center text-2xl bg-[#FFB115] px-2 border-[20px] rounder border-[#14314e]">
          <p>Understanding Executives</p>
       </div>
 

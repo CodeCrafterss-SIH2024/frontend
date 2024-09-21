@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect,useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -8,7 +9,7 @@ import AdminPanel from './components/AdminPanel';
 import HomePage from './components/HomePage';
 import ResetPassword from './components/ResetPassword'; // Import the ResetPassword component
 import MainPage from './pages/MainPage';
-import Judgegame from './components/Judgegame';
+
 import JudiciaryPage from './pages/JudiciaryPage ';
 import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
@@ -23,27 +24,37 @@ import CommunityChat from './components/CommunityChat';
 import PresidentPage from './pages/PresidentPage';
 // import CrossMain from './pages/CrossMain';
 import QuizMain from './pages/quizMain';
+import RTequalitys from './pages/RTequalitys';
 // import { ToastContainer } from 'react-toastify';
+
+import RoomMain from './components/RoomMain';
+
+import Frights from './components/Frights';
+import Secondmain from './components/Secondmain';
+
+import DPSP from './components/DPSP';
 
 
 import Pramble from './pages/Pramble';
 
 
 const App = () => {
+ 
   return (
     <Router>
       <Routes>
+      <Route path='/adult' element={<Secondmain/>}/>
       <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
         
       <Route path='/experts' element={<ExpertMain/>}/>
       <Route path='/vicepresident' element={<PresidentPage/>}/>
 
-      <Route path='/president' element={<PresidentPage/>}/>
+      <Route path='/planning-commision' element={<PresidentPage/>}/>
 
          <Route path='/community' element={<CommunityChat/>}/>
         <Route path="/leaderboard" element={<Leaderheader/>}/>
-        <Route path= "/debate-section" element={<Judgegame/>}/>
+        <Route path= "/debate-section" element={<RoomMain/>}/>
         <Route path= "/explore" element={<MainPage/>}/>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
@@ -54,7 +65,11 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
      
         <Route path="/main-page" element={<MainPage />} />
+
         <Route path="/legislature" element={<LegislaturePage />} />
+      <Route path="/fund_rights" element={<Frights/>} />
+      <Route path="/rt" element={<RTequalitys/>}/>
+        <Route path="/dsps" element={<DPSP />} />
       <Route path="/executive" element={<ExecutivePage />} />
       <Route path="/pramble" element={<Pramble />} />
       </Routes>
@@ -64,3 +79,4 @@ const App = () => {
 };
 
 export default App;
+

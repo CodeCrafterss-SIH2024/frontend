@@ -14,7 +14,7 @@ function Firstloader() {
 
 
 <div class="containerr">
-    <h1 class='floader'>संस्थान और संविधान</h1>
+    <h1 class='floader'>नागरिक और संविधान</h1>
     <div class="loader"></div>
     
  </div>

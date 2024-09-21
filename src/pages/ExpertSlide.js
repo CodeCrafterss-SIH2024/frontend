@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 
 const ExpertSlide = ({ expert }) => {
   const [showContact, setShowContact] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleShowContact = () => {
     setShowContact(!showContact);
@@ -9,6 +17,24 @@ const ExpertSlide = ({ expert }) => {
 
   const handleRating = (rating) => {
     alert(`You rated this expert ${rating} stars!`);
+  };
+
+  const handleFormInput = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle the form submission, e.g., send data to the server
+    setShowPopup(true); // Show the popup message
+    setTimeout(() => {
+      setShowPopup(false); // Hide popup after 2 seconds
+      setShowForm(false); // Close the form after submission
+    }, 2000);
   };
 
   return (
@@ -24,12 +50,18 @@ const ExpertSlide = ({ expert }) => {
           <p>{expert.contactInfo}</p>
         </div>
       )}
-      <button className="mt-4 bg-[#d4cae8] text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300">
+
+      <button 
+        className="mt-4 bg-[#d4cae8] text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+        onClick={() => setShowForm(true)}
+      >
         Book Appointment
       </button>
+
       <button className="mt-4 bg-teal-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-teal-600 transition duration-300">
         Video Call
       </button>
+
       <div className="mt-4 flex justify-center">
         {[...Array(5)].map((_, index) => (
           <span
@@ -41,6 +73,73 @@ const ExpertSlide = ({ expert }) => {
           </span>
         ))}
       </div>
+
+      {/* Book Appointment Form Modal */}
+      {showForm && (
+        <div className="fixed inset-0 bg-[#3d54ca] bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white ml-10 mr-10 p-8 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold text-black mb-4">Book Appointment</h2>
+            <form onSubmit={handleSubmit}>
+              <input 
+                type="text" 
+                name="name" 
+                placeholder="Name" 
+                value={formData.name} 
+                onChange={handleFormInput}
+                className="w-full mb-4 p-2 border border-gray-300 rounded-lg" 
+                required
+              />
+              <input 
+                type="email" 
+                name="email" 
+                placeholder="Email" 
+                value={formData.email} 
+                onChange={handleFormInput}
+                className="w-full mb-4 p-2 border border-gray-300 rounded-lg" 
+                required
+              />
+              <input 
+                type="tel" 
+                name="phone" 
+                placeholder="Phone Number" 
+                value={formData.phone} 
+                onChange={handleFormInput}
+                className="w-full mb-4 p-2 border border-gray-300 rounded-lg" 
+                required
+              />
+              <textarea 
+                name="message" 
+                placeholder="Message" 
+                value={formData.message} 
+                onChange={handleFormInput}
+                className="w-full mb-4 p-2 border border-gray-300 rounded-lg"
+                required
+              ></textarea>
+              <button 
+                type="submit" 
+                className="w-full bg-blue-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+              >
+                Send
+              </button>
+            </form>
+            <button
+              onClick={() => setShowForm(false)}
+              className="mt-4 text-red-500"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Popup after submission */}
+      {showPopup && (
+        <div className="fixed top-0 left-0 w-full flex justify-center">
+          <div className="mt-4 bg-green-500 text-white py-2 px-6 rounded-full shadow-lg">
+            Message sent successfully!
+          </div>
+        </div>
+      )}
     </div>
   );
 };
