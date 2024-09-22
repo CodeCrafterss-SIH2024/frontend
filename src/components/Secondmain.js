@@ -21,7 +21,7 @@ function Secondmain() {
       </Link>
 
       {/* Second Button */}
-      <Link to="/preamble">
+      <Link to="/pramble">
         <button className=" div1 text-white px-4 py-2 ml-[-20px] rounded w-[200px] h-full   px-[150px] py-[300px]">
           
         </button>
