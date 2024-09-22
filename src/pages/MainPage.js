@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NewHeader from '../components/NewHeader';
 import Parliament from '../img/parliament-pic.png';
-import mehel from '../img/mehel.png'
+import mehel from '../img/mehel.png';
 import Boy from '../img/boy-pic.png';
 import './MainPage.css';
 

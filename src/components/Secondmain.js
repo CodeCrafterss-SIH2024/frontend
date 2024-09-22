@@ -1,7 +1,6 @@
 import React from 'react'
-import fourpill from '../img/fourpills.jpg'
 import NewHeader from './NewHeader'
-import fourpill2 from '../img/fourpill2.jpg'
+import fourpill2 from '../img/preamble.jpg'
 import { Link } from 'react-router-dom'
 import './Secondmain.css'
 

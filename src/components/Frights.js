@@ -19,7 +19,7 @@ export default function Frights() {
       {/* Header at the top */}
       <NewHeader />
 
-      <div className="mt-[100px] w-full text-center text-2xl bg-yellow-400">
+      <div className="mt-[120px] w-full text-center text-2xl bg-yellow-400">
          <p>Understanding Fundamental Rights</p>
       </div>
 

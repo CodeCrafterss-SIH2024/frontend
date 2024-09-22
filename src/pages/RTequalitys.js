@@ -2,6 +2,7 @@ import React from 'react'
 import NewHeader from '../components/NewHeader';
 import eqa from '../img/equality2.png'
 import './RTequality.css'
+import { Link } from 'react-router-dom';
 
 function RTequalitys() {
 
@@ -72,8 +73,12 @@ function RTequalitys() {
       
           </div>  
          <div className="interactive">
-          <div className="kard"></div>
-          <div className="kard"></div>
+         <Link className='kard' to='/kwiz'>
+          <div> Quizes </div>
+            </Link>
+         
+          <div className="kard">Stories</div>
+          <div className="kard">Case Study</div>
          </div>
     </div>
   )
