@@ -47,6 +47,7 @@ const App = () => {
       <Routes>
       <Route path='/adult' element={<Secondmain/>}/>
       <Route path='/quiz-section' element={<QuizMain/>}/>
+      <Route path='/kwiz' element={<QuizComponent/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
       <Route path='/kwiz-back' element={<RTequalitys/>}/>
       <Route path='/experts' element={<ExpertMain/>}/>
