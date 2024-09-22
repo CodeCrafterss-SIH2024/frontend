@@ -36,6 +36,7 @@ import DPSP from './components/DPSP';
 
 
 import Pramble from './pages/Pramble';
+import Fduties from './pages/fduties';
 
 
 const App = () => {
@@ -43,6 +44,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path='/preamble' element={<Pramble/>}/>
+      <Route path='/duties' element={<Fduties/>}/>
       <Route path='/adult' element={<Secondmain/>}/>
       <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>

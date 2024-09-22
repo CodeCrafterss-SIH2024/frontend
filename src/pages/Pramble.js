@@ -15,7 +15,7 @@ function Pramble() {
       {/* Header at the top */}
       <NewHeader />
 
-      <div className="mt-[130px] w-full text-center text-3xl bg-yellow-400">
+      <div className="mt-[100px] w-full text-center text-2xl bg-[#FFB115] px-2 py-2 border-[20px] rounder border-[#14314e]">
          <p>Understanding Preambles</p>
       </div>
 
@@ -54,7 +54,7 @@ function Pramble() {
       {/* heheheheheheheh */}
 
 
-      <div className="mod2">
+      <div className="w-full text-center text-2xl bg-[#FFB115] px-2 py-2 border-[20px] rounder border-[#14314e]">
         
          <p>KEY FEATURE</p>
       
