@@ -4,6 +4,7 @@ import Cards from '../components/Cards';
 import './ExecutivePage.css';
 import logo from '../img/court2.png'
 
+
 function JudiciaryPage () {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#43345d]">

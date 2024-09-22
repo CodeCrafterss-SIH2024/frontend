@@ -1,4 +1,4 @@
-// src/pages/MainPage.js
+//src/pages/MainPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NewHeader from '../components/NewHeader';

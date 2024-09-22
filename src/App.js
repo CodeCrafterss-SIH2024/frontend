@@ -15,6 +15,7 @@ import ExecutivePage from './pages/ExecutivePage ';
 import LegislaturePage from './pages/LegislaturePage ';
 import Leaderheader from './pages/Leaderheader';
 
+
 import ExpertMain from './pages/ExpertMain';
 import CrossMain from './pages/CrossMain';
 
@@ -35,13 +36,15 @@ import DPSP from './components/DPSP';
 import QuizComponent from './pages/QuizEq';
 
 
+import Pramble from './pages/Pramble';
+import Fduties from './pages/fduties';
+
 
 const App = () => {
  
   return (
     <Router>
       <Routes>
-      <Route path='/kwiz' element={<QuizComponent/>}/>
       <Route path='/adult' element={<Secondmain/>}/>
       <Route path='/quiz-section' element={<QuizMain/>}/>
       <Route path='/crossword-puzzle' element={<CrossMain/>}/>
@@ -68,7 +71,7 @@ const App = () => {
       <Route path="/rt" element={<RTequalitys/>}/>
         <Route path="/dsps" element={<DPSP />} />
       <Route path="/executive" element={<ExecutivePage />} />
-      <Route path="/judiciary" element={<JudiciaryPage />} />
+      <Route path="/pramble" element={<Pramble />} />
       </Routes>
       {/* <ToastContainer /> */}
     </Router>
