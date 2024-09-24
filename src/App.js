@@ -39,6 +39,7 @@ import QuizComponent from './pages/QuizEq';
 import Pramble from './pages/Pramble';
 import Fduties from './pages/fduties';
 
+import StoryEquality from './pages/StoryEquality';
 
 const App = () => {
  
@@ -74,6 +75,10 @@ const App = () => {
         <Route path="/dsps" element={<DPSP />} />
       <Route path="/executive" element={<ExecutivePage />} />
       <Route path="/pramble" element={<Pramble />} />
+
+      <Route path="/stories" element={<StoryEquality />} />
+
+
       </Routes>
       {/* <ToastContainer /> */}
     </Router>

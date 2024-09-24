@@ -77,7 +77,9 @@ function RTequalitys() {
           <div> Quizes </div>
             </Link>
          
+         
           <div className="kard">Stories</div>
+
           <div className="kard">Case Study</div>
          </div>
     </div>
